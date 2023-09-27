@@ -1,6 +1,3 @@
-"""Median calculator."""
-"""ENTER YOUR SOLUTION HERE!"""
-
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
@@ -10,5 +7,7 @@ while True:
     else:
         break
 print(numbers)
-
-#test
+numbers.sort()
+middleNum = len(numbers)//2
+median = (numbers[middleNum]+numbers[~middleNum])/2
+print(f'median number is {median}')
